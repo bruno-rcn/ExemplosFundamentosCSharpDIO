@@ -1,0 +1,8 @@
+Topicos abordados:
+- Sintaxe
+- Convencoes de escrita
+- Conceito de classes
+- Tipos de dados (string, int, double, ...)
+- Casting (Convert, Parse, TryParse)
+- Operadores condicionais (if, switch case)
+- Operadores logicos (and, or, Not)
