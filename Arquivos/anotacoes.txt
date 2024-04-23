@@ -6,3 +6,4 @@ Topicos abordados:
 - Casting (Convert, Parse, TryParse)
 - Operadores condicionais (if, switch case)
 - Operadores logicos (and, or, Not)
+- Operadores aritmeticos e class Math

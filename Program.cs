@@ -74,6 +74,7 @@
 
 
 // 4 - Operadores condicionais
+// https://learn.microsoft.com/pt-pt/dotnet/csharp/language-reference/statements/selection-statements
 
 // int quantidadeEstoque = 10;
 // int quantidadeCompra = 4;
@@ -102,44 +103,64 @@
 //     Console.WriteLine("Nao tem a quantidade desejada em estoque!");
 // }
 
-Console.WriteLine("Digite uma letra:");
-string letra = Console.ReadLine(); // vai ler o que for digitado no console e armazenar na variavel
+// Console.WriteLine("Digite uma letra:");
+// string letra = Console.ReadLine(); // vai ler o que for digitado no console e armazenar na variavel
 
-// verificar se a letra e vogal ou nao
-switch (letra)
-{
-    case "a":
-        Console.WriteLine("vogal");
-        break;
-    case "e":
-        Console.WriteLine("vogal");
-        break;
-    case "i":
-        Console.WriteLine("vogal");
-        break;
-    case "o":
-        Console.WriteLine("vogal");
-        break;
-    case "u":
-        Console.WriteLine("vogal");
-        break;
-    default:
-        Console.WriteLine("Nao e uma vogal");
-        break;
-}
+// // verificar se a letra e vogal ou nao
+// switch (letra)
+// {
+//     case "a":
+//         Console.WriteLine("vogal");
+//         break;
+//     case "e":
+//         Console.WriteLine("vogal");
+//         break;
+//     case "i":
+//         Console.WriteLine("vogal");
+//         break;
+//     case "o":
+//         Console.WriteLine("vogal");
+//         break;
+//     case "u":
+//         Console.WriteLine("vogal");
+//         break;
+//     default:
+//         Console.WriteLine("Nao e uma vogal");
+//         break;
+// }
 
-// ou
+// // ou
 
-switch (letra)
-{
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("vogal");
-        break;
-    default:
-        Console.WriteLine("Nao e uma vogal");
-        break;
-}
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("vogal");
+//         break;
+//     default:
+//         Console.WriteLine("Nao e uma vogal");
+//         break;
+// }
+
+
+
+// ==================================================================================================================
+
+
+
+// 5 - Operadores aritmeticos e class Math
+// https://learn.microsoft.com/en-us/dotnet/api/system.math?view=net-8.0
+
+Calculadora calc = new Calculadora();
+calc.Somar(2, 5);
+calc.Subtrair(10, 5);
+calc.Dividir(4, 2);
+calc.Multiplicar(3, 7);
+calc.Potencia(3, 3);
+calc.Seno(30);
+calc.Cosseno(30);
+calc.Tangente(30);
+calc.RaizQuadrada(16);
