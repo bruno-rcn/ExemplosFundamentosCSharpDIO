@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace ExemplosFundamentos.Models
 {
+    /// <summary>
+    /// Representa uma pessoa Fisica
+    /// </summary>
     public class Pessoa
     {
         public string? Nome { get; set; }

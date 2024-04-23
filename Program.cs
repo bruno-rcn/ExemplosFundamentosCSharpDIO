@@ -3,10 +3,10 @@
 
 // 1 - Utilizando a class pessoa
 
-// Pessoa p1 = new Pessoa();
-// p1.Nome = "Bruno";
-// p1.Idade = 28;
-// p1.Apresentar();
+Pessoa p1 = new Pessoa();
+p1.Nome = "Bruno";
+p1.Idade = 28;
+p1.Apresentar();
 
 
 
@@ -269,24 +269,24 @@
 //     Console.WriteLine("Posicao do array: " + item);
 // }
 
-List<string> listaString = new List<string>();
-listaString.Add("SP");
-listaString.Add("RJ");
+// List<string> listaString = new List<string>();
+// listaString.Add("SP");
+// listaString.Add("RJ");
 
-foreach (var item in listaString)
-{
-    Console.WriteLine("Posicao da lista: " + item);
-}
+// foreach (var item in listaString)
+// {
+//     Console.WriteLine("Posicao da lista: " + item);
+// }
 
-listaString.Add("MG");
+// listaString.Add("MG");
 
-foreach (var item in listaString)
-{
-    Console.WriteLine("Add novo item Posicao da lista: " + item);
-}
+// foreach (var item in listaString)
+// {
+//     Console.WriteLine("Add novo item Posicao da lista: " + item);
+// }
 
-listaString.Remove("SP");
-foreach (var item in listaString)
-{
-    Console.WriteLine("Deletado um item Posicao da lista: " + item);
-}
+// listaString.Remove("SP");
+// foreach (var item in listaString)
+// {
+//     Console.WriteLine("Deletado um item Posicao da lista: " + item);
+// }
