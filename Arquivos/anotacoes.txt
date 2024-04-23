@@ -7,3 +7,4 @@ Topicos abordados:
 - Operadores condicionais (if, switch case)
 - Operadores logicos (and, or, Not)
 - Operadores aritmeticos e class Math
+- estrutura de repeticao (for, while, do while, foreach)
