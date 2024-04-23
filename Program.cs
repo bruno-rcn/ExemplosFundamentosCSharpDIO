@@ -210,35 +210,83 @@
 // Console.WriteLine($"Total da soma dos numeros: {soma}");
 
 // contruir menu interativo
-string opcao;
+// string opcao;
 
-while (true)
+// while (true)
+// {
+//     Console.WriteLine("Digite a sua opcao:");
+//     Console.WriteLine("1 - Cadastrar cliente");
+//     Console.WriteLine("2 - Buscar cliente");
+//     Console.WriteLine("3 - Apagar cliente");
+//     Console.WriteLine("4 - Encerrar");
+
+//     opcao = Console.ReadLine();
+
+//     switch (opcao)
+//     {
+//         case "1":
+//             Console.WriteLine("Cadastro de cliente");
+//             break;
+//         case "2":
+//             Console.WriteLine("Busca de cliente");
+//             break;
+//         case "3":
+//             Console.WriteLine("Apagar cliente");
+//             break;
+//         case "4":
+//             Environment.Exit(0);
+//             break;
+//         default:
+//             Console.WriteLine("Opcao invalida");
+//             break;
+//     }
+// }
+
+
+
+// ==================================================================================================================
+
+
+
+// 7 - Arrays e listas
+
+// int[] arrayInteiros = new int[3];
+// arrayInteiros[0] = 1;
+// arrayInteiros[1] = 2;
+// arrayInteiros[2] = 3;
+
+// aumentar o tamanho do array - primeiro o endereco do array desejado e depois o tamanho desejado
+// Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+// for(int i = 0; i < arrayInteiros.Length; i++)
+// {
+//     Console.WriteLine("Posicao do array: " + arrayInteiros[i]);
+// }
+
+// Vai pegar cada posicar do array, adicionar o valor na variavel a esquerda e em seguida realizar o bloco de codigo com esse valor. Quando acaba ele vai para a proxima posicao e assim vai ate o fim
+// foreach (int item in arrayInteiros)
+// {
+//     Console.WriteLine("Posicao do array: " + item);
+// }
+
+List<string> listaString = new List<string>();
+listaString.Add("SP");
+listaString.Add("RJ");
+
+foreach (var item in listaString)
 {
-    Console.WriteLine("Digite a sua opcao:");
-    Console.WriteLine("1 - Cadastrar cliente");
-    Console.WriteLine("2 - Buscar cliente");
-    Console.WriteLine("3 - Apagar cliente");
-    Console.WriteLine("4 - Encerrar");
-
-    opcao = Console.ReadLine();
-
-    switch (opcao)
-    {
-        case "1":
-            Console.WriteLine("Cadastro de cliente");
-            break;
-        case "2":
-            Console.WriteLine("Busca de cliente");
-            break;
-        case "3":
-            Console.WriteLine("Apagar cliente");
-            break;
-        case "4":
-            Environment.Exit(0);
-            break;
-        default:
-            Console.WriteLine("Opcao invalida");
-            break;
-    }
+    Console.WriteLine("Posicao da lista: " + item);
 }
 
+listaString.Add("MG");
+
+foreach (var item in listaString)
+{
+    Console.WriteLine("Add novo item Posicao da lista: " + item);
+}
+
+listaString.Remove("SP");
+foreach (var item in listaString)
+{
+    Console.WriteLine("Deletado um item Posicao da lista: " + item);
+}
